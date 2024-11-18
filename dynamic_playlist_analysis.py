@@ -35,6 +35,7 @@ def fetch_playlist_tracks_with_features(playlist_id):
     while True:
         try:
             # Fetch all tracks in the playlist
+            results = sp.playlist_items(playlist_id)
             for item in results['items']:
                 track = item['track']
                 track_ids.append(track['id'])
