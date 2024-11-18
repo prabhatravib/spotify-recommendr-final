@@ -113,6 +113,9 @@ def get_recommendation(playlist_data_str):
                         "role": "user",
                         "content": (
                             f"Analyze the following playlist data and recommend one new song. "
+                            "Check thoroughly to ensure that the recommended song is not present in this playlist. "
+                            "It must be a new song. The response should only contain the song name and album in the format 'Song Name - Album Name'.\n\n"
+                            f"{playlist_data_str}"
                     }
                 ]
             )
