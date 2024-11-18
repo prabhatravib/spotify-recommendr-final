@@ -9,7 +9,7 @@ import datetime
 # Set up your Spotify API credentials
 client_id = 'a5bc1ba0d9a74df1ae24610c8e738a7a'
 client_secret = '99ed526f26cf49a7ab8ba0482e603558'
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 
 # Set up OpenAI API key
 openai.api_key = OPENAI_API_KEY
