@@ -54,6 +54,7 @@ def fetch_playlist_tracks_with_features(playlist_id):
                 while True:
                     try:
                         batch_ids = track_ids[i:i+50]
+                        features = sp.audio_features(batch_ids)
                         for j, feature in enumerate(features):
                             if feature:
                                 tracks[i+j].update({
