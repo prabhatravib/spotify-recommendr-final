@@ -7,9 +7,9 @@ import time
 import datetime
 
 # Set up your Spotify API credentials
-client_id = 'a5bc1ba0d9a74df1ae24610c8e738a7a'
-client_secret = '99ed526f26cf49a7ab8ba0482e603558'
-OPENAI_API_KEY='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'
+client_id = os.getenv("SPOTIFY_CLIENT_ID")
+client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Set up OpenAI API key
 openai.api_key = OPENAI_API_KEY
