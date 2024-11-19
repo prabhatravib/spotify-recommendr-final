@@ -5,6 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import openai
 import time
 import datetime
+import os
 
 # Set up your Spotify API credentials
 client_id = os.getenv("SPOTIFY_CLIENT_ID")
